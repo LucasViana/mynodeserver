@@ -1,9 +1,14 @@
 var express = require('express');
 var app = express();
+var path = require('path');
 
-app.get('/', function (req, res) {
-  res.sendfile('index.html');
+app.get("/", function (req, res) {
+  res.redirect("/index.html");
 });
+
+
+app.use(express.static(__dirname + '/public'));
+;
 
 var server = app.listen(80, function () {
 
