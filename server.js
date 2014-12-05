@@ -1,11 +1,6 @@
-var http = require('http');
-var fs = require('fs');
-var filename = './index.html';
-http.createServer(function(req,res){
-	res.writeHead(200, {'Content-type':'text/html'});
-	fs.readFile(filename, 'utf8', function(err,data){
-		if(err) throw err;
-		res.write(data);
-		res.end;
-	});
-}).listen(80,'104.131.164.147');
+var express = require('express');
+var app = express();
+
+app.use(express.static(__dirname + '/static'));
+
+app.listen(80);
