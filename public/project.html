@@ -1,0 +1,8 @@
+<h2 class="title">{{items.project.name}}</h2>
+<div style="background-color:#{{items.project.styles.background.color}};">
+	<div ng-repeat="item in items.project.modules">
+	<div ng-bind-html='trustAsHtml(item.text)'></div>
+	<div ng-bind-html='trustAsHtml(item.embed)'></div>
+	<div ng-bind-html='item.text_plain()'></div>
+	<img ng-src="{{item.src}}">
+</div>
