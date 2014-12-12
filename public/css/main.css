@@ -44,13 +44,27 @@ figure {
   src: url("../fonts/MyriadProSemibold.eot");
   src: url("../fonts/MyriadProSemibold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProSemibold.woff") format("woff"), url("../fonts/MyriadProSemibold.ttf") format("truetype"), url("../fonts/MyriadProSemibold.svg#MyriadProSemibold") format("svg"); }
 h2 {
-  font-family: MyriadProSemibold; }
+  font-family: MyriadProSemibold;
+  color: #272727;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  text-align: center;
+  font-size: 2.5em;
+  letter-spacing: 0.0625em; }
+  h2:last-child {
+    margin-right: 0; }
 
 h3 {
-  font-family: MyriadProSemibold; }
+  font-family: MyriadProSemibold;
+  color: #272727; }
 
 p {
-  font-family: MyriadProRegular; }
+  font-family: MyriadProRegular;
+  color: #272727; }
 
 .home {
   width: 100%;
@@ -59,11 +73,14 @@ p {
   background-size: cover; }
 
 .logo-hero {
-  max-width: 800px;
+  display: block;
   width: 100%;
-  position: absolute;
-  top: 40%;
-  left: 25%; }
+  text-align: center;
+  margin: 0; }
+  .logo-hero img {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    max-width: 800px; }
 
 .border-purple {
   border-bottom: solid 3px #8e44ad;
@@ -106,7 +123,7 @@ header {
       margin-right: 2.35765%;
       width: 14.70196%;
       margin-left: 8.5298%;
-      margin-top: 10px;
+      margin-top: 20px;
       opacity: 0;
       -webkit-transition: all, 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       -moz-transition: all, 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -115,9 +132,9 @@ header {
         margin-right: 0; }
       header nav .logo-header img {
         width: 100%;
-        max-width: 280px;
+        max-width: 200px;
         height: 100%;
-        max-height: 80px; }
+        max-height: 55px; }
     header nav ul {
       float: left;
       display: block;
@@ -134,20 +151,17 @@ header {
         margin-left: 11px;
         text-decoration: none;
         letter-spacing: 0.0625em; }
-        header nav ul li:first-child {
-          margin-left: 0px; }
         header nav ul li a {
           -webkit-transition: all, 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
           -moz-transition: all, 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
           transition: all, 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          color: #272727;
           font-family: MyriadProRegular;
           text-decoration: none;
           padding: 10px 14px 10px 14px;
           border-radius: 4px;
           border: solid 1px transparent; }
 
-.home-menu a {
-  color: #8e44ad; }
 .home-menu a:hover {
   border: solid 1px #8e44ad;
   color: #8e44ad; }
@@ -155,8 +169,6 @@ header {
   background: #8e44ad;
   color: white; }
 
-.about-menu a {
-  color: #e74c3c; }
 .about-menu a:hover {
   border: solid 1px #e74c3c;
   color: #e74c3c; }
@@ -164,8 +176,6 @@ header {
   background: #e74c3c;
   color: white; }
 
-.services-menu a {
-  color: #f39c12; }
 .services-menu a:hover {
   border: solid 1px #f39c12;
   color: #f39c12; }
@@ -173,8 +183,6 @@ header {
   background: #f39c12;
   color: white; }
 
-.works-menu a {
-  color: #27ae60; }
 .works-menu a:hover {
   border: solid 1px #27ae60;
   color: #27ae60; }
@@ -182,8 +190,6 @@ header {
   background: #27ae60;
   color: white; }
 
-.contact-menu a {
-  color: #5fa0cb; }
 .contact-menu a:hover {
   border: solid 1px #2980b9;
   color: #2980b9; }
@@ -232,19 +238,6 @@ section {
       content: "";
       display: table;
       clear: both; }
-    .about article h2 {
-      color: #e74c3c;
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%;
-      margin-top: 10%;
-      margin-bottom: 10%;
-      text-align: center;
-      font-size: 2.5em;
-      letter-spacing: 0.0625em; }
-      .about article h2:last-child {
-        margin-right: 0; }
     .about article p {
       color: #272727;
       float: left;
@@ -295,7 +288,7 @@ section {
       margin: 14px 14px 54px 14px; }
 
 .background-parallax-about {
-  height: 287px;
+  height: 600px;
   background: #e74c3c;
   background-size: cover;
   position: relative; }
@@ -321,19 +314,6 @@ section {
       content: "";
       display: table;
       clear: both; }
-    .contact .contact-content h2 {
-      color: #2980b9;
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%;
-      margin-top: 10%;
-      margin-bottom: 10%;
-      text-align: center;
-      font-size: 2.5em;
-      letter-spacing: 0.0625em; }
-      .contact .contact-content h2:last-child {
-        margin-right: 0; }
     .contact .contact-content dl {
       float: left;
       display: block;
@@ -400,7 +380,7 @@ button[type=submit] {
   background: white;
   font-size: 1em;
   color: #272727;
-  border: 2px solid #2980b9;
+  border: 1px solid #2980b9;
   font-family: MyriadProRegular;
   width: 90px;
   height: 40px;
@@ -438,7 +418,7 @@ button[type=submit] {
   float: left; }
 
 .background-parallax-contact {
-  height: 287px;
+  height: 600px;
   background: #2980b9;
   background-size: cover;
   position: relative; }
@@ -459,19 +439,6 @@ button[type=submit] {
     max-width: 75em;
     margin-left: auto;
     margin-right: auto; }
-    .services .services-content h2 {
-      color: #f39c12;
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%;
-      margin-top: 10%;
-      margin-bottom: 10%;
-      text-align: center;
-      font-size: 2.5em;
-      letter-spacing: 0.0625em; }
-      .services .services-content h2:last-child {
-        margin-right: 0; }
     .services .services-content:after {
       content: "";
       display: table;
@@ -514,7 +481,7 @@ button[type=submit] {
   background: url("http://res.cloudinary.com/http-levyndesign-com-br/image/upload/v1418358289/services-icons_mrva2a.png") bottom right; }
 
 .background-parallax-services {
-  height: 287px;
+  height: 600px;
   background: #f39c12;
   background-size: cover;
   position: relative; }
@@ -540,19 +507,6 @@ button[type=submit] {
       content: "";
       display: table;
       clear: both; }
-    .works .services-content h2 {
-      color: #27ae60;
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%;
-      margin-top: 10%;
-      margin-bottom: 10%;
-      text-align: center;
-      font-size: 2.5em;
-      letter-spacing: 0.0625em; }
-      .works .services-content h2:last-child {
-        margin-right: 0; }
 
 figure {
   overflow: hidden;
@@ -591,7 +545,7 @@ figure:hover > figcaption {
   height: 50px; }
 
 .background-parallax-works {
-  height: 287px;
+  height: 600px;
   background: #27ae60;
   background-size: cover;
   position: relative; }
@@ -615,7 +569,7 @@ footer {
     display: block;
     margin: 0;
     padding-top: 40px;
-    margin-left: 20px;
+    margin-left: 8.5%;
     width: 40%;
     float: left; }
   footer .social {
@@ -623,7 +577,7 @@ footer {
     margin: 0;
     padding-top: 40px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 8.5%;
     width: 40%; }
     footer .social li {
       float: right;
@@ -902,3 +856,5 @@ body.ngdialog-open {
 .ngdialog.ngdialog-theme-default .ngdialog-button.ngdialog-button-secondary {
   background: #e0e0e0;
   color: #777; }
+
+/*# sourceMappingURL=main.css.map */
